@@ -1,0 +1,64 @@
+.btn {
+    // Primary
+    &-primary {
+        background-color: green;
+        border-color: green;
+        &:focus,
+        &:hover {
+            background-color: darken(green, 5%);
+            border-color: darken(green, 5%);
+        }
+    }
+
+    &-outline-primary {
+        border-color: green;
+        color: green;
+        &:focus,
+        &:hover {
+            background-color: green;
+            border-color: green;
+        }
+    }
+
+    // Secondary
+    &-secondary {
+        background-color: $yellow;
+        border-color: $yellow;
+        &:focus,
+        &:hover {
+            background-color: darken($yellow, 5%);
+            border-color: darken($yellow, 5%);
+        }
+    }
+
+    &-outline-secondary {
+        border-color: $yellow;
+        color: $yellow;
+        &:focus,
+        &:hover {
+            background-color: $yellow;
+            border-color: $yellow;
+        }
+    }
+
+    // Dark
+    &-dark {
+        background-color: $black;
+        border-color: $black;
+        &:focus,
+        &:hover {
+            background-color: lighten($black, 5%);
+            border-color: darken($black, 5%);
+        }
+    }
+
+    &-outline-dark {
+        border-color: $black;
+        color: $black;
+        &:focus,
+        &:hover {
+            background-color: $black;
+            border-color: $black;
+        }
+    }
+}

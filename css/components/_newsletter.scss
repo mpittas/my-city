@@ -1,0 +1,52 @@
+.vr-newsletter {
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 24px;
+      margin: 0;
+      color: white;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+      color: white;
+    }
+    i {
+      width: 50px;
+      height: 50px;
+      background: white;
+      color: $green;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-right: 20px;
+    }
+  }
+
+  form {
+    display: flex;
+    input[type="email"] {
+      min-width: 300px;
+      border: none;
+      background: #ddd;
+      min-height: 40px;
+      padding: 0.5rem;
+    }
+    input[type="submit"] {
+      background: $green;
+      border: none;
+      color: white;
+      min-height: 40px;
+      font-size: 14px;
+      padding: 0.5rem 1.5rem;
+      transition: background .2s ease;
+      &:hover {
+        background: darken($green, 6%);
+      }
+    }
+  }
+}

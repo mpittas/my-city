@@ -1,0 +1,39 @@
+.vr-testimonial {
+  display: flex;
+  &__image {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  &__content {
+    width: calc(100% - 60px);
+    padding-left: 1.5em;
+    blockquote {
+      font-style: italic;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    > div  {
+      font-size: 14px;
+      + div {
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+  &__person {
+    font-weight: bold;
+  }
+  &__job {
+    i {
+      font-size: 12px;
+      margin-right: 0.5rem;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.slick-dots {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  > li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-color: rgba(0,0,0,0.4);
+    + li {
+      margin-left: 0.75em;
+    }
+    &.slick-active {
+      background: $green;
+    }
+  }
+}

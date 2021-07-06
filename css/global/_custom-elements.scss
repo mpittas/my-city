@@ -1,0 +1,18 @@
+.custom-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 4px;
+        background: $yellow;
+        margin-right: 0.5em;
+    }
+}
+
+.custom-spacing {
+    padding: 4em 0;
+}
